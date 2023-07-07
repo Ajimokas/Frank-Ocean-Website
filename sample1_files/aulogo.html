@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+
+<html  dir="ltr" lang="en" xml:lang="en">
+    <head>
+        <title>Error</title>
+        <link rel="shortcut icon" href="https://scis.lms.athabascau.ca/theme/aubranding/pix/favicon.ico" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="moodle, Error" />
+<link rel="stylesheet" type="text/css" href="https://scis.lms.athabascau.ca/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.css" /><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="https://scis.lms.athabascau.ca/theme/styles.php/aubranding/1653210339_1611769205/all" />
+<script type="text/javascript">
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"https:\/\/scis.lms.athabascau.ca","sesskey":"2iayTdEU56","themerev":"1653210339","slasharguments":1,"theme":"aubranding","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1653210339","admin":"admin","svgicons":true,"usertimezone":"America\/Edmonton","contextid":25804};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":false,"base":"https:\/\/scis.lms.athabascau.ca\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/scis.lms.athabascau.ca\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/scis.lms.athabascau.ca\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/scis.lms.athabascau.ca\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/scis.lms.athabascau.ca\/theme\/yui_combo.php?m\/1653210339\/","combine":true,"comboBase":"https:\/\/scis.lms.athabascau.ca\/theme\/yui_combo.php?","ext":false,"root":"m\/1653210339\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-checknet":{"requires":["base-base","moodle-core-notification-alert","io-base"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-dock":{"requires":["base","node","event-custom","event-mouseenter","event-resize","escape","moodle-core-dock-loader","moodle-core-event"]},"moodle-core-dock-loader":{"requires":["escape"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-modchooser":{"requires":["moodle-core-chooserdialogue","moodle-course-coursebase"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-passwordunmask":{"requires":[]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-form-showadvanced":{"requires":["node","base","selector-css3"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-question-qbankmanager":{"requires":["node","selector-css3"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-qtype_ddimageortext-dd":{"requires":["node","dd","dd-drop","dd-constrain"]},"moodle-qtype_ddimageortext-form":{"requires":["moodle-qtype_ddimageortext-dd","form_filepicker"]},"moodle-qtype_ddmarker-dd":{"requires":["node","event-resize","dd","dd-drop","dd-constrain","graphics"]},"moodle-qtype_ddmarker-form":{"requires":["moodle-qtype_ddmarker-dd","form_filepicker","graphics","escape"]},"moodle-qtype_ddwtos-dd":{"requires":["node","dd","dd-drop","dd-constrain"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_forum-subscriptiontoggle":{"requires":["base-base","io-base"]},"moodle-mod_oublog-savecheck":{"requires":["base","node","io","panel","moodle-core-notification-alert"]},"moodle-mod_oublog-tagselector":{"requires":["base","node","autocomplete","autocomplete-filters","autocomplete-highlighters"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-quizquestionbank":{"requires":["base","event","node","io","io-form","yui-later","moodle-question-qbankmanager","moodle-core-notification-dialogue"]},"moodle-mod_quiz-randomquestion":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-mod_quiz-repaginate":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_html-button":{"requires":["moodle-editor_atto-plugin","event-valuechange"]},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"https:\/\/scis.lms.athabascau.ca\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/scis.lms.athabascau.ca\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1653210339\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/scis.lms.athabascau.ca\/lib\/javascript.php\/1653210339\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/scis.lms.athabascau.ca\/lib\/javascript.php\/1653210339\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/mathjax\/2.7.5\/MathJax.js?delayStartupUntil=configured"}}};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+<style type="text/css" media="print">.logininfo {display: none;}</style>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic|Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
+        <link href='https://scis.lms.athabascau.ca/theme/aubranding/fonts/glyphicons/style.css' rel='stylesheet' type='text/css'>
+        <link href='https://scis.lms.athabascau.ca/file.php/310/appearance/custom_styles.css' rel='stylesheet' type='text/css'> 
+        <style>
+            
+        </style>
+    </head>
+
+    <body  id="page-site-index" class="format-topics course path-site gecko dir-ltr lang-en yui-skin-sam yui3-skin-sam scis-lms-athabascau-ca pagelayout-base course-310 context-25804 category-1 homepage drawer-open-left">
+
+        <div>
+    <a class="sr-only sr-only-focusable" href="#maincontent">Skip to main content</a>
+</div><script type="text/javascript" src="https://scis.lms.athabascau.ca/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.js"></script><script type="text/javascript" src="https://scis.lms.athabascau.ca/lib/javascript.php/1653210339/lib/javascript-static.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+
+
+        <div id="au-nav" class="pos-f-t ">
+            <div id="utility">
+                <div id="utility-msg">
+                    <p class="utility-label">
+                        School of Computing and Information Systems
+                    </p>
+                </div>
+                <div id="util-nav">
+                    <nav>
+                    <ul>
+                        <li class="util-item">
+                        <a href="https://www.athabascau.ca/mental-health/" title="Mental Health &amp; Wellness">Mental Health &amp; Wellness</a>
+                        </li>
+                        <li class="util-item">
+                        <a href="http://www.athabascau.ca/aboutau/research-institution/" title="Research">Research</a>
+                        </li>
+                        <li class="util-item">
+                        <a href="http://library.athabascau.ca/" title="Library">Library</a>
+                        </li>
+                        <li class="util-item">
+                        <a href="http://www.athabascau.ca/students/store/index.php" title="AU Store">AU Store</a>
+                        </li>
+                        <li class="util-item">
+                        <a href="http://alumni.athabascau.ca/" title="Alumni">Alumni</a>
+                        </li>
+                        <li class="util-item">
+                        <a href="http://news.athabascau.ca/" title="News">News</a>
+                        </li>
+                    </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="header-shiv">
+                    <header id="main-header">
+                        <a href="https://scis.lms.athabascau.ca" id="au-logo">
+                            <div class="full-logo">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 240.5 1000 398"><title>Athabasca University</title><path class="shield" d="M9.5 275.5v216.25c0 72 119.5 121 119.5 121s119.5-49.25 119.5-121V275.5H9.5zM205 491.75c0 23.75-40.5 55-76 73.25-36-18.5-76-49.25-76-73.25V319h152v172.75z"/><path class="main" d="M866 517v-42.75h-11.75V469l12.25-2.75V442.5l13.75-.75v25H901v7.75h-21v41c0 8.25 2.5 11.5 8.75 11.5 4.25 0 7-3 10.25-7.75l4.5 3.5c-5.5 10-10.25 13.25-19.75 13.25-12.25-.5-17.75-7.75-17.75-19zM379.75 375.25H346.5l-5 13c-3.75 9.75-5.25 13 7.5 15.25v6.75h-33v-6.75c10-2.25 12.25-7 16.5-18l29.25-73.75h10.5l28.75 80c3 8.25 5.5 10.5 16.5 11.75v6.75h-44.25v-6.75c13-.75 14.25-4 11.75-11l-5.25-17.25zm-3-8.75l-12.25-35.25h-1.25l-13.5 35.25h27zm50 26.25V350H415v-5.25l12.25-2.75v-23.75l13.75-.75v25h20.75v7.75H441v41c0 8.25 2.5 11.5 8.75 11.5 4.25 0 7-3 10.25-7.75l4.5 3.5c-5.5 10-10.25 13.25-19.75 13.25-12.5-.5-18-7.75-18-19zm41.5 10.25c8.5-.25 11-1.75 11-5.25v-76c0-4.5-2.75-7-11.5-7.25v-7L493 307v45c8-5.5 16.25-10.5 26-10.5 10 0 17.25 7.25 17.25 20.5v35.75c0 3.5 2.25 5 10.75 5.25v7h-34.25v-7c7.5-.25 9.5-1.75 9.5-5.25v-30.5c0-11.75-4.25-15.25-12.75-15.25-6.75 0-12.25 2.75-16.5 5.25v40.5c0 3.5 2 5 9.25 5.25v7H468v-7h.25zm87.25-7.5c0-6 2.75-12 9-15.5 11.25-6.25 29-8.75 31.25-10.5v-4.25c0-12.5-3.5-17-13-17-4.75 0-7.5 1-9.75 3 1.25 2.5 1.5 5 1.5 7 0 4.5-2.75 8.25-7.75 8.25-5.25 0-8.5-4-8.5-8.25 0-10.25 12.5-17 26.75-17 15.5 0 25 7 25 21.25V394c0 7.25.5 9.5 10.5 8.25l.5 5.75c-5.25 2-8.25 2.75-12.25 2.75-7.75 0-10.5-2.75-11.25-11.5h-1.25c-6 6.75-12.75 11.75-21.5 11.75-13 0-19.25-6.75-19.25-15.5zm40.25-2.75v-17c-20.75 4.75-24.5 7.75-24.5 16.25 0 5 2.5 9.5 10.25 9.5 5.75 0 11-4.25 14.25-8.75zm33.5 6.25v-77c0-4.5-2.75-7.25-11.5-7.25v-7.25L643 307v43.25c5.25-5 11.75-9 21-9 18 0 28.5 14 28.5 33 0 19.75-12.5 37.25-32.25 37.25-8.25 0-14.75-2.75-21.25-7.5l-4.75 8.5h-5.75l.75-13.5zm48.25-24.25c0-14.5-7.25-24.25-18-24.25-6.5 0-11.25 2-16.25 6.25v37c3.5 7 9.25 10.5 16.75 10.5 12.25-.25 17.5-10.75 17.5-29.5zM701 395.5c0-6 2.75-12 9-15.5 11.25-6.25 29-8.75 31-10.5v-4.25c0-12.5-3.5-17-13-17-4.75 0-7.5 1-9.75 3 1.25 2.5 1.5 5 1.5 7 0 4.5-2.75 8.25-7.75 8.25-5.25 0-8.5-4-8.5-8.25 0-10.25 12.5-17 26.75-17 15.5 0 25 7 25 21.25V394c0 7.25.5 9.5 10.25 8.25l.5 5.75c-5.25 2-8.25 2.75-12.25 2.75-7.75 0-10.5-2.75-11.25-11.5h-1.25c-6 6.75-12.75 11.75-21.5 11.75-12.5 0-18.75-6.75-18.75-15.5zm40.25-2.75v-17c-20.75 4.75-24.5 7.75-24.5 16.25 0 5 2.5 9.5 10.25 9.5 5.75 0 11-4.25 14.25-8.75zm32-4h6.25c6.75 10.75 13.25 15.75 21.75 15.75 6.75 0 10.5-4.25 10.5-8.75 0-6.25-4.5-10-17-13.25-15-4-21-10.5-21-19.75 0-13 9.75-21.75 24.25-21.75 4.75 0 10.25 2 13.25 4.25L814 341h5.25v20.25H813c-5.25-8.75-9.5-13.25-16.75-13.25s-11 3.75-11 9c0 6 5 9 16.25 11.75 14.75 4 20.75 9.75 20.75 19.75 0 12.5-7.25 22.75-23.5 22.75-6.25 0-12.5-2.25-16.5-5.25l-4 5.25H773v-22.5h.25zm57.5-12c0-20.5 15-36 33.5-36 15.25 0 25 8.25 25 17 0 6-3.75 10.75-9 10.75-5 0-8.5-3.25-8.5-7.75 0-4 2.75-6.75 4.75-8-1.5-2.25-6.5-5-11.75-5-11 0-18.75 6.5-18.75 25.25 0 17.75 7.25 28.75 21.75 28.75 8.25 0 14.5-4.75 19.5-10.5l4.25 4c-6.25 9-13.75 15.5-28.5 15.5-19.5.5-32.25-14.25-32.25-34zM899 395.5c0-6 2.75-12 9-15.5 11.25-6.25 29-8.75 31.25-10.5v-4.25c0-12.5-3.5-17-13-17-4.75 0-7.5 1-9.75 3 1.25 2.5 1.5 5 1.5 7 0 4.5-2.75 8.25-7.75 8.25-5.25 0-8.5-4-8.5-8.25 0-10.25 12.5-17 26.75-17 15.5 0 25 7 25 21.25V394c0 7.25.5 9.5 10.5 8.25l.5 5.75c-5.25 2-8.25 2.75-12.25 2.75-7.75 0-10.5-2.75-11.25-11.5h-1.25C933.75 406 927 411 918.25 411c-13 0-19.25-6.75-19.25-15.5zm40.25-2.75v-17c-20.75 4.75-24.5 7.75-24.5 16.25 0 5 2.5 9.5 10.25 9.5 5.75 0 11-4.25 14.25-8.75zM333 505v-54.5c0-4.5-3.25-6-15.75-6.25V437h45.5v7.25c-13.25.5-14.5 1.5-14.5 6.25V501c0 18.75 9.5 26 27.5 26 8 0 13.75-2.75 18-7 5-5 6.25-11.5 6.25-22.75V460c0-13.5-2.75-14.5-16.75-16.5v-6.75h39.5v6.75c-13.25 2.25-14 3-14 16.5v44.75c0 16.25-13.5 32-37.75 32-24.75 0-38-13.25-38-31.75zm93 22.25c8.5-.25 10.75-1.75 10.75-5.25v-41c0-4.5-2.25-7-10.75-7.25v-7.25l24.5-.5v10.25c7.75-5.5 16.25-10.75 26-10.75 10.25 0 17.5 7.25 17.5 20.5v35.75c0 3.5 2 5 10.75 5.25v7H470.5v-7c7.5-.25 9.5-1.75 9.5-5.25V491.5c0-11.75-4.25-15.25-12.75-15.25-6.75 0-12.25 2.75-16.5 5.25V522c0 3.5 2 5 9.25 5.25v7h-34v-7zm86.25 0C520.75 527 523 525.5 523 522v-41c0-4.5-2-7-10.75-7.25v-7.25L537 466v56c0 3.5 2 5 10.75 5.25v7H512.5v-7h-.25zm8.25-86c0-5.75 3.75-9.75 9.25-9.75s9.25 3.75 9.25 9.25c0 5.75-3.75 9.5-9.25 9.5s-9.25-3.5-9.25-9zm40.75 41c-2.5-6.5-4.75-8.25-11.5-9.25v-6.75h34V473c-7 .75-9.25 1.75-9.25 4 0 1 .25 1.75.75 3l14 37.25H591l12.5-32c1-2.25 1.5-4.5 1.5-6 0-3.25-2.25-5-8-6.25v-6.75h27V473c-4.5 1-8.25 3.5-11.25 10.5L591 535.25h-9l-20.75-53zM627 501c0-20.25 13.25-36 32.5-36 21.75 0 29.25 17.25 28 34.5l-45.5-.25v.25c0 15 7.25 26.75 21.75 26.75 8.25 0 14.75-4.75 20.75-12l4.25 4c-5.5 9.25-14.25 17-29.25 17-20.75.25-32.5-14.75-32.5-34.25zm15-7.5l30.75-.5c.25-12.25-4-21.5-14.5-21.5-8 0-15 5-16.25 22zm53.5 33.75c8.5-.25 10.75-1.75 10.75-5.25v-41c0-4.5-2.25-7-10.75-7.25v-7.25l24.5-.5v11.5c5.25-6.5 11.25-12 19-12 7.5 0 11.5 5.25 11.5 11.5 0 4.75-3.5 9-8.25 9-4.5 0-8.5-2.25-8.5-8 0-.75.25-1.75.25-2.5-6.75-.25-10.5 4.25-13.75 7.75V522c0 3.5 2.75 5 12.5 5.25v7H695.5v-7zM755.25 513h6.25c6.75 10.75 13.25 15.75 21.75 15.75 6.75 0 10.5-4.25 10.5-8.75 0-6.25-4.5-10-17-13.25-15-4-21-10.25-21-19.75 0-13 9.75-21.75 24.25-21.75 4.75 0 10.25 2 13.25 4.25l2.75-4.25h5.25v20.25H795c-5.25-8.75-9.5-13.25-16.75-13.25s-11 3.75-11 9c0 6 5 9 16.25 11.75 14.75 4 20.75 9.75 20.75 19.75 0 12.5-7.25 22.75-23.5 22.75-6.25 0-12.5-2.25-16.5-5.25l-4 5.25H755V513h.25zM816 527.25c8.5-.25 10.75-1.75 10.75-5.25v-41c0-4.5-2-7-10.75-7.25v-7.25l24.5-.5v56c0 3.5 2 5 10.75 5.25v7H816v-7zm8-86c0-5.75 3.75-9.75 9.25-9.75s9.25 3.75 9.25 9.25c0 5.75-3.75 9.5-9.25 9.5s-9.25-3.5-9.25-9zm95.5 41.25c-2.75-6.25-4.5-8.25-11.5-9.25v-6.75h34v6.75c-9.25 1-10.5 2.75-8.5 7.5L948.75 517l12.5-30c3.5-8.25 1.75-12.25-6-13.75v-6.75H983v6.75c-6 1-10 4.25-12.75 11l-23.5 56.5c-8.5 19-15 24-24.25 24-7.25 0-12.75-5-12.75-11.25 0-4.25 3-9 8.5-9 4.75 0 8.5 4 8.5 8.75 0 1.25-.25 2.75-.5 3.25 4.5-.5 9-7.5 15-21.5l.5-1-22.25-51.5z"/></svg>
+                            </div>
+        
+                            <div class="shield-logo">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 145"><title>Athabasca University Shield</title><path class="shield" d="M1.3 4v88.3c0 29.3 48.7 49.4 48.7 49.4s48.7-20 48.7-49.4V4H1.3zM81 92.3c0 9.7-16.5 22.5-31 29.9-14.7-7.5-31-20.1-31-29.9V21.7h62v70.6z"/></svg>
+                            </div>
+                        </a>
+                        <div id="header-site-id">
+                            <div class="text">
+                                <h2 class="course-title">Computer Science 266</h2><span class="course-subtitle"> Introduction to Web Programming (Revision 3)</span>
+                            </div>
+                        </div>
+                        <nav id="au-right-nav">
+                            <ul class="nav-panel-actions">
+                                <li id="my-au-trigger">
+                                    <a href="https://my.athabascau.ca/render.userLayoutRootNode.uP" class="nav-panel-toggle" target="_blank" aria-expanded="false" aria-label="My AY Login" role="button" aria-controls="my-au">
+                                        <span class="nav-panel-close"></span>
+                                        <i class="fa fa-user" aria-hidden="true"></i>
+                                        <div class="myAU-logo">
+                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 364.628 215.023"><title>myAU Login</title><path class="white" fill="#ffffff" d="M123 155.464l-13.957 50.302H63.395L123 9.806h58.147l61.058 195.96h-47.973l-15.12-50.302H123zm49.715-33.138l-12.21-41.58c-3.49-11.63-6.978-26.165-9.886-37.795h-.582c-2.907 11.63-5.815 26.455-9.013 37.796l-11.63 41.58h43.32z"/><g opacity=".79"><defs><path id="a" d="M192.822 8.207h159.91v199.157h-159.91z"/></defs><path fill="#EF7323" d="M237.017 8.207v112.52c0 34.016 13.083 51.172 35.47 51.172 23.26 0 36.053-16.282 36.053-51.172V8.208h44.193v109.9c0 60.476-30.53 89.256-81.7 89.256-49.426 0-78.21-27.616-78.21-89.837V8.207h44.194z"/></g><g class="white" fill="#ffffff"><path d="M8.32 21.375c0-4.614-.15-8.547-.302-11.8H17.7l.53 4.993h.226c1.588-2.345 4.84-5.824 11.194-5.824 4.765 0 8.547 2.42 10.135 6.278h.15c1.362-1.89 3.026-3.404 4.766-4.462 2.043-1.21 4.313-1.815 7.035-1.815 7.11 0 12.48 4.992 12.48 16.035v21.784H53.022v-20.12c0-5.37-1.74-8.472-5.446-8.472-2.647 0-4.54 1.815-5.295 4.01-.3.83-.453 2.04-.453 2.95v21.63H30.633V25.84c0-4.69-1.664-7.867-5.295-7.867-2.95 0-4.69 2.27-5.37 4.16-.378.91-.454 1.968-.454 2.876v21.557H8.32V21.375zM80.624 9.576l5.52 18.153c.606 2.193 1.362 4.916 1.816 6.882h.227c.53-1.967 1.135-4.765 1.664-6.883l4.54-18.154h12.33L98.095 33.93c-5.294 14.674-8.85 20.574-13.01 24.28-4.01 3.48-8.245 4.69-11.12 5.068l-2.42-9.757c1.438-.226 3.253-.907 4.993-1.965 1.74-.908 3.63-2.723 4.764-4.614.378-.53.605-1.134.605-1.663 0-.378-.077-.983-.53-1.89L67.84 9.576h12.784z"/></g><path fill="#EF7323" d="M69.32 64.044H7.712V56.21h59.39"/></svg>
+                                        </div>
+                                        <span class="nav-panel-label">myAU</span>
+                                    </a>
+                                    <div id="my-au" class="nav-panel" aria-hidden="true">
+                                        <div class="nav-panel-inner">
+                                            <a class="btn btn-orange" href="https://my.athabascau.ca/render.userLayoutRootNode.uP"><i class="fa fa-lock" aria-hidden="true"></i>Login in Securely</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </header>
+            </div>
+            
+            <header role="banner" class="navbar-full  bg-faded navbar-static-top moodle-has-zindex" >
+                <div data-region="drawer-toggle">
+                    <button aria-expanded="true" aria-controls="nav-drawer" type="button" class="pull-xs-left m-r-1 hamburger" data-action="toggle-drawer" data-side="left" data-preference="drawer-open-nav">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                        <span class="sr-only">Side panel</span> <span class="nav-panel-label">Menu</span>
+                    </button>
+                </div>
+                
+                <div class="container-fluid navbar-nav navbar-au-bottom">        
+                    <!-- user_menu -->
+                    <div class="usermenu"><div class="action-menu moodle-actionmenu nowrap-items" id="action-menu-1" data-enhance="moodle-core-actionmenu">
+
+        <div class="menubar" id="action-menu-1-menubar" role="menubar">
+
+            <div class="dropdown d-inline">
+    <a href="#" class="dropdown-toggle" id="dropdown-1" title="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="userbutton"><span class="usertext">Shalom Ajimoko</span><span class="avatars"><span class="avatar current"><img src="https://scis.lms.athabascau.ca/theme/image.php/aubranding/core/1653210339/u/f2" alt="Picture of ayodeleaj1" title="Picture of ayodeleaj1" class="userpicture defaultuserpic" width="35" height="35" role="presentation" /></span></span></span><b class="caret"></b></a>
+        <div class="dropdown-menu dropdown-menu-right menu  align-tr-br" id="action-menu-1-menu" data-rel="menu-content" aria-labelledby="action-menu-toggle-1" role="menu" data-align="tr-br">
+            <a href="https://scis.lms.athabascau.ca/user/profile.php?id=82941" class="dropdown-item menu-action" role="menuitem" data-title="profile,moodle" aria-labelledby="actionmenuaction-1"><i class="icon fa fa-user fa-fw " aria-hidden="true" title="Profile" aria-label="Profile"></i><span class="menu-action-text" id="actionmenuaction-1">Profile</span></a><div class="dropdown-divider"></div><a href="https://scis.lms.athabascau.ca/grade/report/overview/index.php" class="dropdown-item menu-action" role="menuitem" data-title="grades,grades" aria-labelledby="actionmenuaction-2"><i class="icon fa fa-table fa-fw " aria-hidden="true" title="Grades" aria-label="Grades"></i><span class="menu-action-text" id="actionmenuaction-2">Grades</span></a><a href="https://scis.lms.athabascau.ca/message/index.php" class="dropdown-item menu-action" role="menuitem" data-title="messages,message" aria-labelledby="actionmenuaction-3"><i class="icon fa fa-comment fa-fw " aria-hidden="true" title="Messages" aria-label="Messages"></i><span class="menu-action-text" id="actionmenuaction-3">Messages</span></a><a href="https://scis.lms.athabascau.ca/user/preferences.php" class="dropdown-item menu-action" role="menuitem" data-title="preferences,moodle" aria-labelledby="actionmenuaction-4"><i class="icon fa fa-wrench fa-fw " aria-hidden="true" title="Preferences" aria-label="Preferences"></i><span class="menu-action-text" id="actionmenuaction-4">Preferences</span></a><div class="dropdown-divider"></div><a href="https://scis.lms.athabascau.ca/login/logout.php?sesskey=2iayTdEU56" class="dropdown-item menu-action" role="menuitem" data-title="logout,moodle" aria-labelledby="actionmenuaction-5"><i class="icon fa fa-sign-out fa-fw " aria-hidden="true" title="Log out" aria-label="Log out"></i><span class="menu-action-text" id="actionmenuaction-5">Log out</span></a>
+        </div>
+</div>
+
+
+        </div>
+
+</div></div>
+        
+                    <!-- navbar_plugin_output -->
+                    <div class="popover-region collapsed popover-region-messages"
+    id="nav-message-popover-container" data-userid="82941"
+    data-region="popover-region">
+    <div class="popover-region-toggle nav-link"
+        data-region="popover-region-toggle"
+        aria-role="button"
+        aria-controls="popover-region-container-628aee00107d1628aee000e3fe9"
+        aria-haspopup="true"
+        aria-label="Show message window with no new messages"
+        tabindex="0">
+                <i class="icon fa fa-comment fa-fw " aria-hidden="true" title="Toggle messages menu" aria-label="Toggle messages menu"></i>
+        <div class="count-container hidden" data-region="count-container"></div>
+
+    </div>
+    <div 
+        id="popover-region-container-628aee00107d1628aee000e3fe9"
+        class="popover-region-container"
+        data-region="popover-region-container"
+        aria-expanded="false"
+        aria-hidden="true"
+        aria-label="Notification window"
+        role="region">
+        <div class="popover-region-header-container">
+            <h3 class="popover-region-header-text" data-region="popover-region-header-text">Messages</h3>
+            <div class="popover-region-header-actions" data-region="popover-region-header-actions">        <div class="newmessage-link">
+            <a href="https://scis.lms.athabascau.ca/message/index.php?contactsfirst=1">New message
+            </a>
+        </div>
+        <a class="mark-all-read-button"
+           href="#"
+           role="button"
+           title="Mark all as read"
+           data-action="mark-all-read">
+            <span class="normal-icon"><i class="icon fa fa-check fa-fw " aria-hidden="true" title="Mark all as read" aria-label="Mark all as read"></i></span>
+            <span class="loading-icon"><img class="icon " alt="Loading" title="Loading" src="https://scis.lms.athabascau.ca/theme/image.php/aubranding/core/1653210339/y/loading" /></span>
+        </a>
+        <a href="https://scis.lms.athabascau.ca/message/edit.php?id=82941"
+           title="Message preferences">
+            <i class="icon fa fa-cog fa-fw " aria-hidden="true" title="Message preferences" aria-label="Message preferences"></i>
+        </a>
+</div>
+        </div>
+        <div class="popover-region-content-container" data-region="popover-region-content-container">
+            <div class="popover-region-content" data-region="popover-region-content">
+                        <div class="messages" data-region="messages" role="log" aria-busy="false" aria-atomic="false" aria-relevant="additions"></div>
+        <div class="empty-message" data-region="empty-message" tabindex="0">No messages</div>
+
+            </div>
+            <span class="loading-icon"><img class="icon " alt="Loading" title="Loading" src="https://scis.lms.athabascau.ca/theme/image.php/aubranding/core/1653210339/y/loading" /></span>
+        </div>
+                <a class="see-all-link"
+                    href="https://scis.lms.athabascau.ca/message/index.php">
+                    <div class="popover-region-footer-container">
+                        <div class="popover-region-seeall-text">See all</div>
+                    </div>
+                </a>
+    </div>
+</div><div class="popover-region collapsed popover-region-notifications"
+    id="nav-notification-popover-container" data-userid="82941" data-username="541e27ffd0939545659d781207e3adeb"
+    data-region="popover-region">
+    <div class="popover-region-toggle nav-link"
+        data-region="popover-region-toggle"
+        aria-role="button"
+        aria-controls="popover-region-container-628aee0011079628aee000e3fe10"
+        aria-haspopup="true"
+        aria-label="Show notification window with no new notifications"
+        tabindex="0">
+                <i class="icon fa fa-bell fa-fw " aria-hidden="true" title="Toggle notifications menu" aria-label="Toggle notifications menu"></i>
+        <div class="count-container hidden" data-region="count-container"></div>
+
+    </div>
+    <div 
+        id="popover-region-container-628aee0011079628aee000e3fe10"
+        class="popover-region-container"
+        data-region="popover-region-container"
+        aria-expanded="false"
+        aria-hidden="true"
+        aria-label="Notification window"
+        role="region">
+        <div class="popover-region-header-container">
+            <h3 class="popover-region-header-text" data-region="popover-region-header-text">Notifications</h3>
+            <div class="popover-region-header-actions" data-region="popover-region-header-actions">        <a class="mark-all-read-button"
+           href="#"
+           title="Mark all as read"
+           data-action="mark-all-read"
+           role="button">
+            <span class="normal-icon"><i class="icon fa fa-check fa-fw " aria-hidden="true" title="Mark all as read" aria-label="Mark all as read"></i></span>
+            <span class="loading-icon"><img class="icon " alt="Loading" title="Loading" src="https://scis.lms.athabascau.ca/theme/image.php/aubranding/core/1653210339/y/loading" /></span>
+        </a>
+        <a href="https://scis.lms.athabascau.ca/message/notificationpreferences.php?userid=82941"
+           title="Notification preferences">
+            <i class="icon fa fa-cog fa-fw " aria-hidden="true" title="Notification preferences" aria-label="Notification preferences"></i>
+        </a>
+</div>
+        </div>
+        <div class="popover-region-content-container" data-region="popover-region-content-container">
+            <div class="popover-region-content" data-region="popover-region-content">
+                        <div class="all-notifications"
+            data-region="all-notifications"
+            role="log"
+            aria-busy="false"
+            aria-atomic="false"
+            aria-relevant="additions"></div>
+        <div class="empty-message" tabindex="0" data-region="empty-message">You have no notifications</div>
+
+            </div>
+            <span class="loading-icon"><img class="icon " alt="Loading" title="Loading" src="https://scis.lms.athabascau.ca/theme/image.php/aubranding/core/1653210339/y/loading" /></span>
+        </div>
+                <a class="see-all-link"
+                    href="https://scis.lms.athabascau.ca/message/output/popup/notifications.php">
+                    <div class="popover-region-footer-container">
+                        <div class="popover-region-seeall-text">See all</div>
+                    </div>
+                </a>
+    </div>
+</div>
+        
+                    <!-- search_box -->
+                    <span class="hidden-md-down">
+                        
+                    </span>
+        
+                    <nav class="nav navbar-nav hidden-md-down">
+                        <!-- custom_menu -->
+                        
+                        <!-- page_heading_menu -->
+                        
+                    </nav>
+                </div>
+            </header>
+        </div>
+        <div id="page-wrapper">
+
+            <div id="page" class="container-fluid">
+                <header id="page-header" class="row"><div class="col-xs-12 p-a-1"><div class="card"><div class="card-block"><div class="pull-xs-right context-header-settings-menu"><div class="action-menu moodle-actionmenu" id="action-menu-2" data-enhance="moodle-core-actionmenu">
+
+        <div class="menubar" id="action-menu-2-menubar" role="menubar">
+
+            <div class="dropdown d-inline">
+    <a href="#" class="dropdown-toggle" id="dropdown-2" title="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icon fa fa-cog fa-fw " aria-hidden="true"  aria-label=""></i></a>
+        <div class="dropdown-menu dropdown-menu-right menu align-tr-br" id="action-menu-2-menu" data-rel="menu-content" aria-labelledby="action-menu-toggle-2" role="menu" data-align="tr-br">
+            <div class="dropdown-item">
+
+    <a href="https://scis.lms.athabascau.ca/course/admin.php?courseid=310" id="action_link628aee000e3fe11" class=""  role="menuitem" ><i class="icon fa fa-cog fa-fw " aria-hidden="true" title="More..." aria-label="More..."></i>More...</a>
+
+
+
+</div>
+        </div>
+</div>
+
+
+        </div>
+
+</div></div><div class="pull-xs-left"><div class="page-context-header"><div class="page-header-headings"><h1>Computer Science 266: Introduction to Web Programming (Revision 3)</h1></div></div></div><div class="clearfix w-100 pull-xs-left" id="page-navbar"><div class="breadcrumb-nav"><ul class="breadcrumb-text" style="display: none;">
+    <li class="breadcrumb-text-item">
+        Home
+    </li>
+    <li class="breadcrumb-text-item">
+        My courses
+    </li>
+    <li class="breadcrumb-text-item">
+        COMP266 R3
+    </li>
+</ul>
+<nav role="navigation">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="https://scis.lms.athabascau.ca/" >Home</a></li>
+        <li class="breadcrumb-item">My courses</li>
+        <li class="breadcrumb-item"><a href="https://scis.lms.athabascau.ca/course/view.php?id=310" title="Computer Science 266: Introduction to Web Programming (Revision 3)">COMP266 R3</a></li>
+    </ol>
+</nav></div><div class="breadcrumb-button pull-xs-right"></div></div><div id="course-header"></div></div></div></div></header>
+
+                <div id="page-content" class="row">
+                    <div id="region-main-box" class="col-xs-12">
+                        <section id="region-main" >
+                                 <div class="card card-block">
+                                <span class="notifications" id="user-notifications"></span>
+                                <div role="main"><span id="maincontent"></span><div data-rel="fatalerror" class="box errorbox p-y-1"><p class="errormessage">Sorry, the requested file could not be found</p><p class="errorcode"><a href="http://docs.moodle.org/34/en/error/moodle/filenotfound">More information about this error</a></p></div><div class="continuebutton">
+    <form method="get" action="https://scis.lms.athabascau.ca/course/view.php" >
+            <input type="hidden" name="id" value="310">
+        <button type="submit" class="btn btn-primary"
+            id="single_button628aee000e3fe12"
+            title=""
+            >Continue</button>
+    </form>
+</div></div>
+                                
+                                
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="nav-drawer" data-region="drawer" class="hidden-print moodle-has-zindex " aria-hidden="false" tabindex="-1">
+                
+                <nav class="list-group">
+                    <a class="list-group-item list-group-item-action" href="https://scis.lms.athabascau.ca/course/view.php?id=310" data-key="coursehome" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="60" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" >
+                        <div class="m-l-0">
+                                <span class="media-left">
+                                    <i class="icon fa fa-fw fa-fw " aria-hidden="true"  aria-label=""></i>
+                                </span>
+                            <span class="media-body ">COMP266 R3</span>
+                        </div>
+                    </a>
+                    <a class="list-group-item list-group-item-action" href="https://scis.lms.athabascau.ca/user/index.php?id=310" data-key="participants" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="90" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="310">
+                        <div class="m-l-0">
+                                <span class="media-left">
+                                    <i class="icon fa fa-users fa-fw " aria-hidden="true"  aria-label=""></i>
+                                </span>
+                            <span class="media-body ">Participants</span>
+                        </div>
+                    </a>
+                    <a class="list-group-item list-group-item-action" href="https://scis.lms.athabascau.ca/course/view.php?id=310#section-0" data-key="4486" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="310">
+                        <div class="m-l-0">
+                                <span class="media-left">
+                                    <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  aria-label=""></i>
+                                </span>
+                            <span class="media-body ">General</span>
+                        </div>
+                    </a>
+                    <a class="list-group-item list-group-item-action" href="https://scis.lms.athabascau.ca/course/view.php?id=310#section-1" data-key="13394" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="310">
+                        <div class="m-l-0">
+                                <span class="media-left">
+                                    <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  aria-label=""></i>
+                                </span>
+                            <span class="media-body ">Assessments</span>
+                        </div>
+                    </a>
+                    <a class="list-group-item list-group-item-action" href="https://scis.lms.athabascau.ca/course/view.php?id=310#section-2" data-key="4496" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="310">
+                        <div class="m-l-0">
+                                <span class="media-left">
+                                    <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  aria-label=""></i>
+                                </span>
+                            <span class="media-body ">Orientation...</span>
+                        </div>
+                    </a>
+                    <a class="list-group-item list-group-item-action" href="https://scis.lms.athabascau.ca/course/view.php?id=310#section-3" data-key="4487" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="310">
+                        <div class="m-l-0">
+                                <span class="media-left">
+                                    <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  aria-label=""></i>
+                                </span>
+                            <span class="media-body ">Site design...</span>
+                        </div>
+                    </a>
+                    <a class="list-group-item list-group-item-action" href="https://scis.lms.athabascau.ca/course/view.php?id=310#section-4" data-key="4488" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="310">
+                        <div class="m-l-0">
+                                <span class="media-left">
+                                    <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  aria-label=""></i>
+                                </span>
+                            <span class="media-body ">HTML Site Buildin...</span>
+                        </div>
+                    </a>
+                    <a class="list-group-item list-group-item-action" href="https://scis.lms.athabascau.ca/course/view.php?id=310#section-5" data-key="4489" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="310">
+                        <div class="m-l-0">
+                                <span class="media-left">
+                                    <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  aria-label=""></i>
+                                </span>
+                            <span class="media-body ">CSS Site Styling...</span>
+                        </div>
+                    </a>
+                    <a class="list-group-item list-group-item-action" href="https://scis.lms.athabascau.ca/course/view.php?id=310#section-6" data-key="4490" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="310">
+                        <div class="m-l-0">
+                                <span class="media-left">
+                                    <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  aria-label=""></i>
+                                </span>
+                            <span class="media-body ">Script Use and Au...</span>
+                        </div>
+                    </a>
+                    <a class="list-group-item list-group-item-action" href="https://scis.lms.athabascau.ca/course/view.php?id=310#section-7" data-key="4491" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="310">
+                        <div class="m-l-0">
+                                <span class="media-left">
+                                    <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  aria-label=""></i>
+                                </span>
+                            <span class="media-body ">Writing JavaScrip...</span>
+                        </div>
+                    </a>
+                    <a class="list-group-item list-group-item-action" href="https://scis.lms.athabascau.ca/course/view.php?id=310#section-8" data-key="4492" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="310">
+                        <div class="m-l-0">
+                                <span class="media-left">
+                                    <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  aria-label=""></i>
+                                </span>
+                            <span class="media-body ">Using Libraries...</span>
+                        </div>
+                    </a>
+                    <a class="list-group-item list-group-item-action" href="https://scis.lms.athabascau.ca/course/view.php?id=310#section-9" data-key="4493" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="310">
+                        <div class="m-l-0">
+                                <span class="media-left">
+                                    <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  aria-label=""></i>
+                                </span>
+                            <span class="media-body ">Using External Da...</span>
+                        </div>
+                    </a>
+                    <a class="list-group-item list-group-item-action" href="https://scis.lms.athabascau.ca/course/view.php?id=310#section-10" data-key="4494" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="310">
+                        <div class="m-l-0">
+                                <span class="media-left">
+                                    <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  aria-label=""></i>
+                                </span>
+                            <span class="media-body ">Course Evaluation...</span>
+                        </div>
+                    </a>
+                    <a class="list-group-item list-group-item-action" href="https://scis.lms.athabascau.ca/course/view.php?id=310#section-11" data-key="4495" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="310">
+                        <div class="m-l-0">
+                                <span class="media-left">
+                                    <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  aria-label=""></i>
+                                </span>
+                            <span class="media-body ">Acknowledgment</span>
+                        </div>
+                    </a>
+                </nav>
+                <nav class="list-group m-t-1">
+                    <a class="list-group-item list-group-item-action" href="https://scis.lms.athabascau.ca/" data-key="home" data-isexpandable="0" data-indent="0" data-showdivider="1" data-type="1" data-nodetype="1" data-collapse="0" data-forceopen="1" data-isactive="0" data-hidden="0" data-preceedwithhr="0" >
+                        <div class="m-l-0">
+                                <span class="media-left">
+                                    <i class="icon fa fa-home fa-fw " aria-hidden="true"  aria-label=""></i>
+                                </span>
+                            <span class="media-body ">Home</span>
+                        </div>
+                    </a>
+                    <a class="list-group-item list-group-item-action" href="https://scis.lms.athabascau.ca/calendar/view.php?view=month&amp;course=310" data-key="calendar" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="60" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="1">
+                        <div class="m-l-0">
+                                <span class="media-left">
+                                    <i class="icon fa fa-calendar fa-fw " aria-hidden="true"  aria-label=""></i>
+                                </span>
+                            <span class="media-body ">Calendar</span>
+                        </div>
+                    </a>
+                    <div class="list-group-item" data-key="mycourses" data-isexpandable="1" data-indent="0" data-showdivider="0" data-type="0" data-nodetype="1" data-collapse="0" data-forceopen="1" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="home">
+                        <div class="m-l-0">
+                                <span class="media-left">
+                                    <i class="icon fa fa-fw fa-fw " aria-hidden="true"  aria-label=""></i>
+                                </span>
+                            <span class="media-body">My courses</span>
+                        </div>
+                    </div>
+                    <a class="list-group-item list-group-item-action" href="https://scis.lms.athabascau.ca/course/view.php?id=310" data-key="310" data-isexpandable="1" data-indent="0" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="1" data-isactive="1" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses">
+                        <div class="m-l-0">
+                                <span class="media-left">
+                                    <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  aria-label=""></i>
+                                </span>
+                            <span class="media-body font-weight-bold">COMP266 R3</span>
+                        </div>
+                    </a>
+                </nav>
+                <nav class="list-group m-t-1">
+                    <a class="list-group-item list-group-item-action" href="https://www.athabascau.ca/mental-health/" data-key="au-nav-drawer-0" data-isexpandable="0" data-indent="0" data-showdivider="1" data-type="60" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" >
+                        <div class="m-l-0">
+                                <span class="media-left">
+                                    <i class="icon fa fa-fw fa-fw " aria-hidden="true"  aria-label=""></i>
+                                </span>
+                            <span class="media-body ">Mental Health &amp; Wellness</span>
+                        </div>
+                    </a>
+                    <a class="list-group-item list-group-item-action" href="http://www.athabascau.ca/aboutau/research-institution/" data-key="au-nav-drawer-1" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="60" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" >
+                        <div class="m-l-0">
+                                <span class="media-left">
+                                    <i class="icon fa fa-fw fa-fw " aria-hidden="true"  aria-label=""></i>
+                                </span>
+                            <span class="media-body ">Research</span>
+                        </div>
+                    </a>
+                    <a class="list-group-item list-group-item-action" href="http://library.athabascau.ca/" data-key="au-nav-drawer-2" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="60" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" >
+                        <div class="m-l-0">
+                                <span class="media-left">
+                                    <i class="icon fa fa-fw fa-fw " aria-hidden="true"  aria-label=""></i>
+                                </span>
+                            <span class="media-body ">Library</span>
+                        </div>
+                    </a>
+                    <a class="list-group-item list-group-item-action" href="http://www.athabascau.ca/students/store/index.php" data-key="au-nav-drawer-3" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="60" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" >
+                        <div class="m-l-0">
+                                <span class="media-left">
+                                    <i class="icon fa fa-fw fa-fw " aria-hidden="true"  aria-label=""></i>
+                                </span>
+                            <span class="media-body ">AU Store</span>
+                        </div>
+                    </a>
+                    <a class="list-group-item list-group-item-action" href="http://alumni.athabascau.ca/" data-key="au-nav-drawer-4" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="60" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" >
+                        <div class="m-l-0">
+                                <span class="media-left">
+                                    <i class="icon fa fa-fw fa-fw " aria-hidden="true"  aria-label=""></i>
+                                </span>
+                            <span class="media-body ">Alumni</span>
+                        </div>
+                    </a>
+                    <a class="list-group-item list-group-item-action" href="http://news.athabascau.ca/" data-key="au-nav-drawer-5" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="60" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" >
+                        <div class="m-l-0">
+                                <span class="media-left">
+                                    <i class="icon fa fa-fw fa-fw " aria-hidden="true"  aria-label=""></i>
+                                </span>
+                            <span class="media-body ">News</span>
+                        </div>
+                    </a>
+                </nav>
+            </div>
+        </div>
+
+    </body>
+</html><footer id="main-footer" class="container-fluid">
+    <div class="footer-inner">
+        <p class="tagline">Open, Flexible, and Everywhere</p>
+        <div class="clearfix">
+            <ul class="footer-links">
+                <li>
+                    <a href="http://search.athabascau.ca/site-index.php" title="A-Z Index">A-Z Index</a>
+                </li>
+                <li>
+                    <a href="http://careers.athabascau.ca/" title="Careers">Careers</a>
+                </li>
+                <li>
+                    <a href="http://calendar.athabascau.ca/undergrad/current/" title="Undergraduate Calendar">Undergraduate Calendar</a>
+                </li>
+                <li>
+                    <a href="http://calendar.athabascau.ca/grad/current/" title="Graduate Calendar">Graduate Calendar</a>
+                </li>
+                <li>
+                    <a href="http://advising.athabascau.ca/program_plans.php" title="Program Plans">Program Plans</a>
+                </li>
+                <li>
+                    <a href="http://giving.athabascau.ca/" title="Give to AU">Give to AU</a>
+                </li>
+                <li>
+                    <a href="http://eepurl.com/WD3WX" title="Email Newsletter">Email Newsletter</a>
+                </li>
+<!--                <li>
+                </li>-->
+                <!--                <li>
+                                    <div></div>
+                                </li>-->
+                <!--                <li>
+                                    <div class="tool_usertours-resettourcontainer"></div>
+                                </li>-->
+            </ul>
+            <ul class="footer-social">
+                <li>
+                    <a href="https://www.facebook.com/AthabascaU" title="Facebook" target="_blank" class="facebook"><i class="fa fa-facebook"><span class="hide">Facebook</span></i></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/athabascau" title="Twitter" target="_blank" class="twitter"><i class="fa fa-twitter"><span class="hide">Twitter</span></i></a>
+                </li>
+                <li>
+		    <a href="https://www.instagram.com/athabascau/" title="Instagram" target="_blank" class="instagram"><i class="fa fa-instagram"><span class="hide">Instagram</span></i></a>
+                </li>
+                <li>
+                    <a href="http://www.linkedin.com/edu/school?id=10787" title="LinkedIn" target="_blank" class="linkedin"><i class="fa fa-linkedin"><span class="hide">LinkedIn</span></i></a>
+                </li>
+            </ul>
+        </div>
+        <div id="copyright">© 2017 Athabasca University is a world-class leader in online and distance education. Based in Alberta and available online around the world, we are Canada's Open University. <a href="http://www.athabascau.ca/aboutau/governing/#privacy-summary">Privacy Policy</a></div>
+
+    </div><!-- END #footer-inner -->
+
+
+    
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139874053-1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag()
+{dataLayer.push(arguments);}
+
+gtag('js', new Date()); gtag('config', 'UA-139874053-1',
+{ 'anonymize_ip': true }
+
+);
+</script>
+<script>
+  var motc = '1635';
+  function moti_defer(method) { 
+    if (window.jQuery)
+      method(); 
+    else 
+      setTimeout(function() { moti_defer(method) }, 50);
+  }
+  moti_defer( function () {
+    window.motu = jQuery('*[data-username]').first().data('username');
+    var _mot = window._mot || (window._mot = []);
+    var motimaticPageMatch = 'https://scis.lms.athabascau.ca/';
+     if (window.location.href == motimaticPageMatch && !_mot.loaded && window.motu) {
+      var motds = document.createElement('script');
+      motds.async = true;
+      motds.src = '//t.motimatic.com/engine/v2/loadpixels.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(motds, s);
+      _mot.loaded = true;
+    }
+    window._mot = window._mot || [];
+  });
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139874053-1"></script>
+<script>
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+ gtag('js', new Date());  gtag('config', 'UA-139874053-1'); gtag('config', '<GA_MEASUREMENT_ID>', { 'anonymize_ip': true });
+</script>
+<script type="text/javascript">
+//<![CDATA[
+var require = {
+    baseUrl : 'https://scis.lms.athabascau.ca/lib/requirejs.php/1653210339/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+    waitSeconds : 0,
+
+    paths: {
+        jquery: 'https://scis.lms.athabascau.ca/lib/javascript.php/1653210339/lib/jquery/jquery-3.2.1.min',
+        jqueryui: 'https://scis.lms.athabascau.ca/lib/javascript.php/1653210339/lib/jquery/ui-1.12.1/jquery-ui.min',
+        jqueryprivate: 'https://scis.lms.athabascau.ca/lib/javascript.php/1653210339/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+      // Stub module for 'process'. This is a workaround for a bug in MathJax (see MDL-60458).
+      //AUSTART
+      // M:: Removing this for now since having issue loading the next line -- jquery-private - Nov 27, 2017
+      //'*': { process: 'core/first' },
+      //AUEND
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script type="text/javascript" src="https://scis.lms.athabascau.ca/lib/javascript.php/1653210339/lib/requirejs/require.min.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+require(['core/first'], function() {
+;
+require(["media_videojs/loader"], function(loader) {
+    loader.setUp(function(videojs) {
+        videojs.options.flash.swf = "https://scis.lms.athabascau.ca/media/player/videojs/videojs/video-js.swf";
+videojs.addLanguage("en",{
+ "Audio Player": "Audio Player",
+ "Video Player": "Video Player",
+ "Play": "Play",
+ "Pause": "Pause",
+ "Replay": "Replay",
+ "Current Time": "Current Time",
+ "Duration Time": "Duration Time",
+ "Remaining Time": "Remaining Time",
+ "Stream Type": "Stream Type",
+ "LIVE": "LIVE",
+ "Loaded": "Loaded",
+ "Progress": "Progress",
+ "Progress Bar": "Progress Bar",
+ "progress bar timing: currentTime={1} duration={2}": "{1} of {2}",
+ "Fullscreen": "Fullscreen",
+ "Non-Fullscreen": "Non-Fullscreen",
+ "Mute": "Mute",
+ "Unmute": "Unmute",
+ "Playback Rate": "Playback Rate",
+ "Subtitles": "Subtitles",
+ "subtitles off": "subtitles off",
+ "Captions": "Captions",
+ "captions off": "captions off",
+ "Chapters": "Chapters",
+ "Descriptions": "Descriptions",
+ "descriptions off": "descriptions off",
+ "Audio Track": "Audio Track",
+ "Volume Level": "Volume Level",
+ "You aborted the media playback": "You aborted the media playback",
+ "A network error caused the media download to fail part-way.": "A network error caused the media download to fail part-way.",
+ "The media could not be loaded, either because the server or network failed or because the format is not supported.": "The media could not be loaded, either because the server or network failed or because the format is not supported.",
+ "The media playback was aborted due to a corruption problem or because the media used features your browser did not support.": "The media playback was aborted due to a corruption problem or because the media used features your browser did not support.",
+ "No compatible source was found for this media.": "No compatible source was found for this media.",
+ "The media is encrypted and we do not have the keys to decrypt it.": "The media is encrypted and we do not have the keys to decrypt it.",
+ "Play Video": "Play Video",
+ "Close": "Close",
+ "Close Modal Dialog": "Close Modal Dialog",
+ "Modal Window": "Modal Window",
+ "This is a modal window": "This is a modal window",
+ "This modal can be closed by pressing the Escape key or activating the close button.": "This modal can be closed by pressing the Escape key or activating the close button.",
+ ", opens captions settings dialog": ", opens captions settings dialog",
+ ", opens subtitles settings dialog": ", opens subtitles settings dialog",
+ ", opens descriptions settings dialog": ", opens descriptions settings dialog",
+ ", selected": ", selected",
+ "captions settings": "captions settings",
+ "subtitles settings": "subititles settings",
+ "descriptions settings": "descriptions settings",
+ "Text": "Text",
+ "White": "White",
+ "Black": "Black",
+ "Red": "Red",
+ "Green": "Green",
+ "Blue": "Blue",
+ "Yellow": "Yellow",
+ "Magenta": "Magenta",
+ "Cyan": "Cyan",
+ "Background": "Background",
+ "Window": "Window",
+ "Transparent": "Transparent",
+ "Semi-Transparent": "Semi-Transparent",
+ "Opaque": "Opaque",
+ "Font Size": "Font Size",
+ "Text Edge Style": "Text Edge Style",
+ "None": "None",
+ "Raised": "Raised",
+ "Depressed": "Depressed",
+ "Uniform": "Uniform",
+ "Dropshadow": "Dropshadow",
+ "Font Family": "Font Family",
+ "Proportional Sans-Serif": "Proportional Sans-Serif",
+ "Monospace Sans-Serif": "Monospace Sans-Serif",
+ "Proportional Serif": "Proportional Serif",
+ "Monospace Serif": "Monospace Serif",
+ "Casual": "Casual",
+ "Script": "Script",
+ "Small Caps": "Small Caps",
+ "Reset": "Reset",
+ "restore all settings to the default values": "restore all settings to the default values",
+ "Done": "Done",
+ "Caption Settings Dialog": "Caption Settings Dialog",
+ "Beginning of dialog window. Escape will cancel and close the window.": "Beginning of dialog window. Escape will cancel and close the window.",
+ "End of dialog window.": "End of dialog window."
+});
+
+    });
+});;
+
+require(['jquery', 'message_popup/message_popover_controller'], function($, controller) {
+    var container = $('#nav-message-popover-container');
+    var controller = new controller(container);
+    controller.registerEventListeners();
+    controller.registerListNavigationEventListeners();
+});
+;
+
+require(['jquery', 'message_popup/notification_popover_controller'], function($, controller) {
+    var container = $('#nav-notification-popover-container');
+    var controller = new controller(container);
+    controller.registerEventListeners();
+    controller.registerListNavigationEventListeners();
+});
+;
+
+require(['theme_boost/loader']);
+require(['theme_boost/drawer'], function(mod) {
+mod.init();
+});
+require(['theme_aubranding/backtotop'], function(mod) {
+mod.init();
+});
+require(['theme_aubranding/catchshortcuts'], function(mod) {
+mod.init([]);
+});
+require(['theme_aubranding/blocks'], function(mod) {
+mod.init();
+});
+require(['theme_aubranding/courseheader'], function(mod) {
+mod.init();
+});
+
+require(['jquery'], function($) {
+var body = $('body');
+var trigger = body.find("[data-action='toggle-drawer']");
+
+// If nav drawer is toggled
+    trigger.click(function() {
+    // Only process if we are on small screens
+        if ($(document).width() < 768) {
+            var navDrawerStatus = $('#nav-drawer').attr('aria-hidden');
+            //if nav drawer is open, then freeze scrolling on the body.
+            if (navDrawerStatus == 'false') {
+                console.log(navDrawerStatus);
+                body.css('position', 'fixed');
+            } else {
+                body.css('position', 'inherit');
+            }
+        }
+    });
+});
+
+;
+require(["core/notification"], function(amd) { amd.init(25804, []); });;
+require(["core/log"], function(amd) { amd.setConfig({"level":"warn"}); });
+});
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"Last modified","name":"Name","error":"Error","info":"Information","yes":"Yes","no":"No","cancel":"Cancel","confirm":"Confirm","areyousure":"Are you sure?","closebuttontitle":"Close","unknownerror":"Unknown error"},"repository":{"type":"Type","size":"Size","invalidjson":"Invalid JSON string","nofilesattached":"No files attached","filepicker":"File picker","logout":"Logout","nofilesavailable":"No files available","norepositoriesavailable":"Sorry, none of your current repositories can return files in the required format.","fileexistsdialogheader":"File exists","fileexistsdialog_editor":"A file with that name has already been attached to the text you are editing.","fileexistsdialog_filemanager":"A file with that name has already been attached","renameto":"Rename to \"{$a}\"","referencesexist":"There are {$a} alias\/shortcut files that use this file as their source","select":"Select"},"admin":{"confirmdeletecomments":"You are about to delete comments, are you sure?","confirmation":"Confirmation"},"theme_aubranding":{"next":"Next","previous":"Previous"}};
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+(function() {Y.use("moodle-filter_mathjaxloader-loader",function() {M.filter_mathjaxloader.configure({"mathjaxconfig":"MathJax.Hub.Config({\r\n    config: [\"Accessible.js\", \"Safe.js\"],\r\n    errorSettings: { message: [\"!\"] },\r\n    skipStartupTypeset: true,\r\n    messageStyle: \"none\"\r\n});\r\n","lang":"en"});
+});
+M.util.help_popups.setup(Y);
+ M.util.js_pending('random628aee000e3fe13'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random628aee000e3fe13'); });
+})();
+//]]>
+</script>
+
+</footer>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                

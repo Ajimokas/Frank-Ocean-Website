@@ -1,0 +1,204 @@
+
+
+body 
+{
+    background-color: #f8f7cf;
+}
+
+/* Titles */
+.title{
+    margin: 20px 430px 20px 430px;
+    font-weight: 2000;
+    text-align: center;
+    font-family: "Lucida Console", "Courier New", monospace;
+    background-color: #cff7fc;
+}
+/* Paragraph Text */
+p {
+    
+    font-family: "Monaco", "Courier New", monospace;
+    
+}
+
+.dropdown-switch {  
+    
+    font-family: "Monaco", "Courier New", monospace;
+    font-size: 20;
+    padding-top: 30;
+    padding-bottom: 30;
+
+}   
+div#drop-box { 
+    position: relative; 
+} 
+#drop-box a 
+{ 
+    padding: 10px 15px 10px; 
+}
+
+
+
+ul.dropdown { 
+    display: none; 
+    position: absolute; 
+    top: 90%;
+    margin-top: 5px; 
+    padding: 5px 5px 5px 5px; 
+    border-radius: 20px;
+    background: #cff7fc; }
+
+    ul.dropdown li a { 
+    text-decoration: none; 
+    display: block; 
+    }
+
+a:link { 
+    text-decoration: none; 
+}
+
+a:visited { 
+    text-decoration: none; 
+    color: black; 
+   }
+
+.footnote{
+    color : black;
+    text-align: center;
+    font-family: "Monaco", "Courier New", monospace;
+    background-color: #cff7fc;
+}
+
+.topnav{
+    padding-top: 75px;
+    padding-right: 20px;
+    padding-bottom: 75px;
+    padding-left: 20px;
+    text-align: center;
+    font-family: "Monaco", "Courier New", serif;
+    background-color: #cff7fc;
+}
+
+.nav-element{
+
+    padding-top: 20px;
+    padding-right: 65px;
+    padding-bottom: 20px;
+    padding-left: 65px;
+    border-radius: 20%;
+    background-color: white;
+    border-top-color: black;
+    font-size: 15px;
+    font-weight: bold;
+    transition: all 0.7s ease;
+}
+.nav-element:hover{
+    background-color: #f8f7cf;
+}
+
+.nav-element-home{
+    padding-top: 10px;
+    padding-right: 65px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    transition: all 0.7s ease;
+}
+
+.nav-element-home:hover{
+    background-color: #f8f7cf;
+}
+ 
+.img-element{
+    border-radius: 29%;
+    padding-top: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+    
+    
+}
+
+#dropdown-id{
+        padding-top: 20px;
+        font-weight: 200px;
+        border-radius: 30px;
+        text-align: center;
+        font-family: "Lucida Console", "Courier New", monospace;
+        background-color: #cff7fc;
+}
+
+.img-element-white-ferrari{
+    border-radius: 29%;
+    padding-top: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+}
+
+.copyright{
+    text-align: center;
+}
+
+.article-link{
+    border-radius: 29%;
+    padding-top: 7px;
+    padding-right: 7px;
+    padding-bottom: 7px;
+    padding-left: 7px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    background-color: #cff7fc;
+
+}
+
+th {
+    background-color: #cff7fc;
+    color: black;
+    text-align: center;
+  }
+
+table {
+    width: 100%;
+    text-align: center;
+    border: 1px solid;
+    border-collapse: collapse;
+    border-style: groove;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+
+ul {
+    font-family: "Lucida Console", "Courier New", monospace;
+    list-style-type: none;
+    text-align: center;
+    padding: 20;
+  }
+
+.foot-element{
+
+    padding-top: 20px;
+    padding-right: 65px;
+    padding-bottom: 20px;
+    padding-left: 65px;
+    border-radius: 20%;
+    background-color: white;
+    border-top-color: black;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.footnote{
+    padding-top: 50px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    text-align: center;
+    font-family: "Monaco", "Courier New", serif;
+    background-color: #cff7fc;
+}

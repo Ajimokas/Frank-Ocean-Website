@@ -1,0 +1,128 @@
+
+
+body 
+{
+    background-color: #f8f7cf;
+}
+
+/* Titles */
+.title{
+    margin: 20px 430px 20px 430px;
+    font-weight: 2000;
+    text-align: center;
+    font-family: "Lucida Console", "Courier New", monospace;
+    background-color: #cff7fc;
+}
+/* Paragraph Text */
+p {
+    
+    font-family: "Monaco", "Courier New", monospace;
+    
+}
+
+a:link { 
+    text-decoration: none; 
+}
+
+a:visited { 
+    text-decoration: none; 
+    color: black; 
+   }
+
+.footnote{
+    color : black;
+    text-align: center;
+    font-family: "Monaco", "Courier New", monospace;
+    background-color: #cff7fc;
+}
+
+.topnav{
+    padding-top: 75px;
+    padding-right: 20px;
+    padding-bottom: 75px;
+    padding-left: 20px;
+    text-align: center;
+    font-family: "Monaco", "Courier New", serif;
+    background-color: #cff7fc;
+}
+
+.nav-element{
+
+    padding-top: 20px;
+    padding-right: 65px;
+    padding-bottom: 20px;
+    padding-left: 65px;
+    border-radius: 20%;
+    background-color: white;
+    border-top-color: black;
+    font-size: 15px;
+    font-weight: bold;
+    transition: all 0.7s ease;
+}
+.nav-element:hover{
+    background-color: #f8f7cf;
+}
+
+
+.nav-element-home{
+    padding-top: 10px;
+    padding-right: 65px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    transition: all 0.7s ease;
+}
+
+.nav-element-home:hover{
+    background-color: #f8f7cf;
+}
+
+
+.img-element{
+    border-radius: 29%;
+    padding-top: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+    
+    
+}
+
+.copyright{
+    text-align: center;
+}
+
+.article-link{
+    border-radius: 29%;
+    padding-top: 7px;
+    padding-right: 7px;
+    padding-bottom: 7px;
+    padding-left: 7px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    background-color: #cff7fc;
+
+}
+
+.foot-element{
+
+    padding-top: 20px;
+    padding-right: 65px;
+    padding-bottom: 20px;
+    padding-left: 65px;
+    border-radius: 20%;
+    background-color: white;
+    border-top-color: black;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.footnote{
+    padding-top: 50px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    text-align: center;
+    font-family: "Monaco", "Courier New", serif;
+    background-color: #cff7fc;
+}

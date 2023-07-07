@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title> Frank Ocean - About </title>
+  <script src="scripts/About.js" defer></script>
+  <script src = "scripts/jquery-3.6.4.min.js"></script>
+</head>
+<link href="styles/About_style.css" rel="stylesheet">
+
+<body class="vsc-initialized">
+
+
+  <div class="topnav">
+    <span class="nav-element-home"> <a href="home.html"> Frank
+        Ocean</a></span>
+    <span class="nav-element" id="about-element"><a href="About.html">About</a></span>
+    <span class="nav-element" id="discography-element"><a href="Discography.html">Discography</a></span>
+    <span class="nav-element" id="BTM-element"><a href="BTMusic.html">Behind the
+        Music</a></span>
+    <span class="nav-element" id="shows-element"><a href="Shows.html">Shows</a></span>
+    <span class="nav-element" id="archive-element"><a href="Archive.html">Archive</a></span>
+  </div>
+
+<!-- Three arhive pictures of frank ocean -->
+  <h3 class="title">Frank Ocean Autobiography</h3>
+  </div>
+  <div>
+    <span><img class="img-element" id="about_img" style="display:none" src="images/about_img.png" alt="Frank Ocean Image" width="420" height="350"></span>
+    <span><img class="img-element" id="about_img1" style="display:none" src="images/frank_stock11.png" alt="Frank Ocean Image" width="420"
+        height="350"></span>
+    <span><img class="img-element"  id="about_img2" style="display:none" src="images/frank_stock9.png" alt="Frank Ocean Video Image" width="420"
+        height="350"></span>
+  </div>
+  <div>
+    <span> <p id="about_img-text"></p></span>
+    <span> <p id="about_img1-text"></p></span>
+    <span> <p id="about_img2-text"></p></span>
+</div>
+<!-- Two different biography texts about Frank Ocean's life -->
+  <div>
+    <span>
+      <h2 class="title"> Biography </h2>
+      <p> <a class="article-link" href="https://en.wikipedia.org/wiki/Frank_Ocean"> Article link</a> </p>
+      <p id="about_text1" style="display:none" >
+        Ocean (Originaly Christopher Lonny Breaux) was born on October 28, 1987,in Long Beach, California. When he was
+        five years old,
+        he and his family relocated to New Orleans. After graduating from John Ehret High School in New Orleans in 2005,
+        Ocean enrolled in the University of New Orleans to study English. However, Hurricane Katrina struck New Orleans
+        in August 2005,
+        destroying his home and personal recording facility and forcing him to transfer to the University of
+        Louisiana at Lafayette. He stayed there for a brief time before dropping out to focus on his music career.
+      </p>
+    </span>
+    <span>
+      <h2 class="title"> Musical Career and Entreprenerial Endeavors </h2>
+      <p> <a class="article-link" href="https://www.biography.com/musician/frank-ocean"> Article link</a> </p>
+      <p id="about_text2" style="display:none" > Frank Ocean moved to LA to start a musical career and soon began writng songs for Justin Beiber and Beyonce.
+        He contributed to the writing of the Justin Bieber track “Bigger” in 2008, and the following year he co-wrote
+        the track
+        “I Miss You” with Beyoncé Knowles for her album 4. That year, he then met Tyler, the Creator, joined the rap
+        group "Odd-Future"
+        and met Trcky Stewart who signed him to Def Jam as a solo artist. The next year, he changed his legal name to
+        Francis Ocean.
+        In 2011 he dropped Nostaligia Ultra, his first project and that was met with criticalacclaim, he then
+        subesquently droped Channel ORANGE,
+        that won him a grammy in 2013. After, in 2016 he dropped two musical projects Endless and Blonde, both to high
+        critical acclaim. He soon disapperd off the music map.
+        We gleefully await his return to the musical scene.
+      </p>
+    </span>
+
+  </div>
+<!-- ******** FORM ************** -->
+<!-- Form to contact me to upadate an missing or incorrect information -->
+  <div class="form">
+    <h4 class="title">Contact Me to Update Information</h4>
+    
+    <form action="https://formspree.io/f/mrgjvlnn" method="POST" name="myForm" onsubmit = "return(validate());">
+
+
+      <label id="sub-title">
+        <h5 class="title-contact"> Your email: </h5>
+        <input type="email" name="Email">
+      </label>
+
+<!-- Get the first name -->
+      <label>
+        <h5 class="title-contact">
+          First Name:
+        </h5>
+        <textarea name="Name"></textarea>
+      </label> 
+
+<!-- Get the last name -->
+      <label>
+        <h5 class="title-contact">
+          Last Name:
+        </h5>
+        <textarea name="Name2"></textarea>
+      </label>
+<!-- Get the country name -->
+      <label>
+        <h5 class="title-contact">
+          Country:
+        </h5>
+        <textarea name="Country"></textarea>
+      </label>
+<!-- Get the messafge -->
+      <label>
+        <h5 class="title-contact">
+          Your message:
+        </h5>
+        <textarea name="message"></textarea>
+      </label>
+
+      
+      <!-- your other form fields go here -->
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+
+<!-- The footnote containing links to music websites and more information -->
+  <div class="footnote">
+    <a class="foot-element"
+      href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiWi4XY1oj4AhUkkYkEHYvuAxEQFnoECAkQAQ&url=https%3A%2F%2Fmusic.apple.com%2Fus%2Fartist%2Ffrank-ocean%2F442122051&usg=AOvVaw0nIAIAddvMgppxKhYZ1gKz">
+      Apple Music</a>
+    <a class="foot-element"
+      href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjerqD71oj4AhUBj4kEHdM5A6gQFnoECA8QAQ&url=https%3A%2F%2Fopen.spotify.com%2Fartist%2F2h93pZq0e7k5yf4dywlkpM&usg=AOvVaw3-QbR1wmTTtaF7-xS3qoXp">Spotify</a>
+      <!-- youtube, instagram, tumblr and much more -->
+    <a class="foot-element" href="https://www.youtube.com/channel/UCqf-kTp9ERV5T1rPayno7LA">Youtube</a>
+    <a class="foot-element" href="https://www.instagram.com/blonded/?hl=en">Instagram</a>
+    <a class="foot-element" href="https://frankocean.tumblr.com/post/167934366641/blondedco">Tumblr</a>
+  </div>
+
+  <div class="copyright">
+    <h5> Created by Ayodele Ajimoko
+    </h5>
+    <h5>Last Edited: May 2023</h5>
+  </div>
+
+</body>
+</html>
